@@ -42,7 +42,8 @@ app.get('/', async (req, res) => {
     // res.send("Hello world") return string
 
     // return webpage with param 2 use for html hbs
-    res.render("weather", {
+    res.render("weather", location ? {
+        status: true,
         region: weather.region,
         country: weather.country,
         temperature: weather.temperature,
@@ -50,7 +51,8 @@ app.get('/', async (req, res) => {
         precip: weather.precip,
         cloudcover: weather.cloudcover,
         humidity: weather.humidity
-    }) 
+    } : { status: false }
+    ) 
 })
 
 app.listen(port , () => {
