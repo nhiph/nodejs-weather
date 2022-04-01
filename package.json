@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-weather",
+  "version": "1.0.0",
+  "description": "waether",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "dev": "nodemon app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "nhiph",
+  "license": "ISC",
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
