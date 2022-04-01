@@ -1,3 +1,5 @@
+api: https://weatherstack.com/
+
 npm i async-request: like axios, fetch
 npm i express : server side render, create web html in serve and res web # client side, create data and res data for client use in framework
 
